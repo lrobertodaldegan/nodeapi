@@ -3,7 +3,7 @@ const controller = require("../controllers/ranking.controller");
 
 module.exports = function(app) {
   app.get(
-    "/:app/ranking",
+    "/api/:app/ranking",
     [
       verify.verifyAppName,
       verify.verifyAppKey,
@@ -12,7 +12,7 @@ module.exports = function(app) {
   );
 
   app.post(
-    "/:app/ranking",
+    "/api/:app/ranking",
     [
       verify.verifyAppName,
       verify.verifyAppKey,
@@ -21,7 +21,7 @@ module.exports = function(app) {
   );
 
   app.delete(
-    "/:app/ranking/:id",
+    "/api/:app/ranking/:id",
     [
       verify.verifyAppName,
       verify.verifyAppKey,
