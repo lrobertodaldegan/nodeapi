@@ -5,6 +5,7 @@ const Ranking = mongoose.model(
   new mongoose.Schema({
     player: String,
     score: Number,
+    game: String,
     app: {
       type: mongoose.Schema.Types.ObjectId, 
       ref:'Generic_App'

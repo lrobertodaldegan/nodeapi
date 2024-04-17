@@ -41,6 +41,10 @@ function initial() {
   .then(a => console.log(`App ${a.name} adicionado com sucesso`))
   .catch(err => {console.log(err); console.log('Erro ao cadastrar app!');});
   */
+
+  db.mongoose.connection.db.stats().then(stats => {
+    console.log(stats);
+  });
 }
 //end mongoose
 //cors...

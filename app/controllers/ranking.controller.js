@@ -29,6 +29,7 @@ exports.list = (req, res) => {
 exports.add = (req, res) => {
   Ranking.findOne({
     app: req.appId,
+    game: req.body.game,
     player: req.body.player,
     score: req.body.score
   })
