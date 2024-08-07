@@ -16,6 +16,11 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.3",
     "nodemailer": "^6.9.5",
-    "pdf-creator-node": "^2.3.5"
+    "pdf-creator-node": "^2.3.5",
+    "axios": "^1.6.7",
+    "mercadopago": "^2.0.7",
+    "node-geo-distance": "^1.2.0",
+    "node-geocoder": "^4.2.0",
+    "read-excel-file": "^5.6.1"
   }
 }

@@ -65,6 +65,15 @@ app.use((_req, res, next) => {
  
 // routes
 require('./app/routes/generic.routes')(app);
+//kepecas
+require('./app/routes/kepecas/assets.routes')(app);
+require('./app/routes/kepecas/auth.routes')(app);
+require('./app/routes/kepecas/device.routes')(app);
+require('./app/routes/kepecas/payment.routes')(app);
+require('./app/routes/kepecas/services.routes')(app);
+require('./app/routes/kepecas/user.routes')(app);
+require('./app/routes/kepecas/usercar.routes')(app);
+
 
 app.all('*', [], (req, res, next) => {
   return res.status(404).send({message: 'Nothing here...'});
